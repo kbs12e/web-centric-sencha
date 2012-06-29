@@ -1,0 +1,8 @@
+2012. 6. 29 오후 4:52:43 org.apache.catalina.core.ApplicationContext log
+정보: ContextListener: contextInitialized()
+2012. 6. 29 오후 4:52:43 org.apache.catalina.core.ApplicationContext log
+정보: SessionListener: contextInitialized()
+2012. 6. 29 오후 4:53:33 org.apache.catalina.core.ApplicationContext log
+정보: SessionListener: contextDestroyed()
+2012. 6. 29 오후 4:53:33 org.apache.catalina.core.ApplicationContext log
+정보: ContextListener: contextDestroyed()

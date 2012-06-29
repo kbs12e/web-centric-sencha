@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="euc-kr">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,
+			maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		
+		<title>Sencha Touch</title>
+		<link rel="stylesheet" type="text/css" href="./sencha-touch-2.0.1.1/resources/css/sencha-touch.css">
+		<script type="text/javascript" src="./sencha-touch-2.0.1.1/sencha-touch-all-debug.js"></script>
+		<script type="text/javascript">
+			Ext.Loader.setConfig({enabled:true});
+			Ext.application({
+				name: "MyApp",
+				launch: function(){
+					var toolbar1 = {
+						xtype: "toolbar",
+						docked: "top",
+						//ui: "light",
+						title: "Page Title",
+					};
+					var toolbar2 = {
+						xtype: "toolbar",
+						docked: "bottom",
+						//ui: "light",
+						title: "Page Footer",
+					};
+					/*var panel = Ext.create("Ext.Panel",{
+						html: "Hello World",
+						style: "background-color:yellow"
+					});*/ 
+					
+					var rootpanel = Ext.create("Ext.Panel", {
+						items: [toolbar1,toolbar2,{xtype:"panel",html:"Page content goes here."}]
+					});					
+					Ext.Viewport.add(rootpanel);
+				}
+			});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
